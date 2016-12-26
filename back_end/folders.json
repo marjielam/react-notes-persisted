@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "id": 1,
+      "name": "My first folder"
+    },
+    {
+      "id": 2,
+      "name": "Second folder"
+    },
+    {
+      "id": 11,
+      "name": "Marjie's third folder"
+    },
+    {
+      "id": 12,
+      "name": "Joelle's folder"
+    },
+    {
+      "id": 13,
+      "name": "Another folder"
+    }
+  ]
+}

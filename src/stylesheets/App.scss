@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Miltonian);
+
+body {
+  margin: 40px;
+  font-family: PT Sans;
+}
+
+.third {
+  background-color: #ECE5CE;
+  height: 1000px;
+  padding: 20px;
+}
+
+.selected-folder {
+  background-color: #61ADA0;
+  color: white;
+}
+
+.selected-note {
+  background-color: #B2D5BA;
+}
+
+.list-item {
+  padding: 7px;
+}
+
+.note-short {
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.folder-name {
+  font-size: 24px;
+}
+
+form {
+  position: absolute;
+  bottom: 5%;
+  margin-bottom: 0px;
+}
+
+.fa-plus-circle {
+  font-size: 45px;
+  padding: 0px 10px;
+  background-color: #ECE5CE;
+}
+
+.fa-sticky-note-o {
+  padding: 6px;
+  font-size: 25px;
+  width: 175px;
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+}
+
+textarea {
+  height: 400px;
+}
+
+.update-delete {
+  padding: 5px 10px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.input-group-label {
+  font-size: 25px;
+  background-color: #ECE5CE;
+  border: none;
+}
+
+button {
+  background-color: #4D6160;
+  color: white;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: Miltonian;
+}
