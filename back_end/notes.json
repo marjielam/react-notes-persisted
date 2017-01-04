@@ -1,40 +1,34 @@
 {
   "notes": [
     {
-      "id": 22,
-      "body": "This is my first note in my first folder!",
-      "updated_at": "12/26/2016",
+      "id": 1,
+      "body": "First note in first folder",
+      "updated_at": "1/3/2017",
       "folder_id": 1
     },
     {
-      "id": 23,
-      "body": "This is my second note",
-      "updated_at": "12/22/2016",
+      "id": 7,
+      "body": "Second note in first folder",
+      "updated_at": "1/3/2017",
       "folder_id": 1
     },
     {
-      "id": 25,
-      "body": "test",
-      "updated_at": "12/26/2016",
-      "folder_id": 12
-    },
-    {
-      "id": 26,
-      "body": "test",
-      "updated_at": "12/22/2016",
-      "folder_id": 12
-    },
-    {
-      "id": 28,
-      "body": "Third note",
-      "updated_at": "12/26/2016",
-      "folder_id": 1
-    },
-    {
-      "id": 30,
-      "body": "This is the first note in the second folder",
-      "updated_at": "12/26/2016",
+      "id": 8,
+      "body": "My notes",
+      "updated_at": "1/3/2017",
       "folder_id": 2
+    },
+    {
+      "id": 9,
+      "body": "Other comments on things",
+      "updated_at": "1/3/2017",
+      "folder_id": 2
+    },
+    {
+      "id": 10,
+      "body": "Test test test test test test test test test test test test test test",
+      "updated_at": "1/3/2017",
+      "folder_id": 5
     }
   ]
 }

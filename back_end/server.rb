@@ -3,6 +3,7 @@ require "sinatra/json"
 require "json"
 require_relative "folder"
 require_relative "note"
+require "pry"
 
 set :bind, '0.0.0.0'  # bind to all interfaces
 

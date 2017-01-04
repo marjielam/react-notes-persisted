@@ -53,9 +53,11 @@ class App extends Component {
           throw(error);
         }
       })
+      .then(response => {
+        this.getFolderData();
+        document.getElementById("folder-input").value = '';
+      })
       .catch(error => console.error(`Error in fetch: ${error.message}`));
-    this.getFolderData();
-    document.getElementById("folder-input").value = '';
   }
 
   createNote() {
@@ -68,8 +70,7 @@ class App extends Component {
     let jsonStringData = JSON.stringify(newNoteData);
     fetch(`http://localhost:4567/folders/${createInFolder}/notes.json`, {
       method: 'post',
-      body: jsonStringData,
-      mode: 'no-cors'
+      body: jsonStringData
     })
     .then(response => {
       if (response.ok) {
@@ -80,8 +81,10 @@ class App extends Component {
         throw(error);
       }
     })
+    .then(response => {
+      this.getNoteData(createInFolder);
+    })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
-    this.getNoteData(createInFolder);
   }
 
   searchNotes() {
@@ -122,8 +125,10 @@ class App extends Component {
         throw(error);
       }
     })
+    .then(response => {
+        this.getNoteData(this.state.selectedFolderId);
+      })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
-    this.getNoteData(this.state.selectedFolderId);
   }
 
   deleteNote() {
@@ -140,8 +145,10 @@ class App extends Component {
         throw(error);
       }
     })
+    .then(response => {
+      this.getNoteData(this.state.selectedFolderId);
+    })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
-    this.getNoteData(this.state.selectedFolderId);
   }
 
   getFolderData() {
